@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+import { ClienteModule } from './cliente/cliente.module';
+import { ProdutoModule } from './produto/produto.module';
+
 import { AppComponent } from './app.component';
 import { IfprComponent } from './ifpr/ifpr.component';
 import {TadsComponent} from './tads/tads.component';
 import {AngularComponent} from './angular/angular.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +20,9 @@ import {AngularComponent} from './angular/angular.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClienteModule,
+    ProdutoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
